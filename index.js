@@ -1,4 +1,4 @@
-// jshint esversion:
+// jshint esversion:6
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -15,6 +15,6 @@ app.post("/",function(req,res){
    console.log(response.statusCode);
 });
 
-app.listen(3000,function(){
-  console.log("server running on port 3000");
+app.listen(5222,function(){
+  console.log("server running on port 5222 ");
 });
