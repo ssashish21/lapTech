@@ -1,15 +1,44 @@
 html,body{
   height: 100vh;
   width: 100vw;
-  background-image: url('/images/home.jpg');
+
   background-position: 0% 9%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #f2f2f2;
+}
 
+.nav-color{
+  /* background-image: url('http://localhost:5000/images/home.jpg'); */
+  background-color: #f2f2f2;
+}
+
+.crypto{
+  margin-top: 10px;
+  text-align: right;
+}
+.description{
+  margin-top: 50px;
+}
+
+.image{
+  height: 500;
+  width: 600;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer-content{
+  margin-top: 15px;
 }
 .footer{
   position: absolute;
 	text-align: center;
+  background: #000000;
+  opacity:0.6;
+  filter:Alpha(opacity=60);
 	bottom: 0;
 	width: 100%;
 	height: 60px;
