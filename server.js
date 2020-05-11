@@ -2,19 +2,32 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
+const ejs = require("ejs");
+
 
 const app = express();
+app.set("view engine","ejs");
+
+var path = require("path");
 
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(express.static('public'));
+
+
+
+
+
+
 
 app.get("/",function(req,res){
-  res.sendFile(__dirname + "/index.html");
+  res.render("index");
 });
 
-app.post("/",function(req,res){
-   console.log(response.statusCode);
-});
+app.get("/signup",function(req,res){
+  res.render("signup");
+})
 
-app.listen(5222,function(){
-  console.log("server running on port 5222 ");
+
+app.listen(5000,function(){
+  console.log("server running on port 5000 ");
 });
