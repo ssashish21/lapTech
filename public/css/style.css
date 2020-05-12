@@ -15,16 +15,9 @@ html,body{
 
 .crypto{
   margin-top: 10px;
-  text-align: right;
-}
-.description{
-  margin-top: 50px;
 }
 
-.image{
-  height: 500;
-  width: 600;
-}
+
 
 .footer-padding {
 	padding-bottom: 60px;
