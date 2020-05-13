@@ -45,7 +45,7 @@ router.post('/signup',(req,res)=>{
       if (user) {
         //User Exist
         errors.push({ msg: 'Email already exists' });
-        res.render('register', {
+        res.render('signup', {
           errors,
           name,
           email,
