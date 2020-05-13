@@ -13,6 +13,7 @@ router.get('/signin',(req,res)=> res.render('signin'));
 //sign up page
 router.get('/signup',(req,res)=> res.render('signup'));
 
+
 // Register handle
 router.post('/signup',(req,res)=>{
   const { name, email, password, password2 } = req.body;
@@ -77,7 +78,7 @@ router.post('/signup',(req,res)=>{
 
 
 // Login
-router.post('/login', (req, res, next) => {
+router.post('/signin', (req, res, next) => {
   passport.authenticate('local', {
     successRedirect: '/dashboard',
     failureRedirect: '/users/signin',

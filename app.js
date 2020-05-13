@@ -13,11 +13,8 @@ const app = express();
 //passport config
 require('./config/passport')(passport);
 
-//connect to mongo
-var MongoClient = require('mongodb').MongoClient;
-
-// Connect to the db
-MongoClient.connect("mongodb://localhost:27017/laptechDB",{ useNewUrlParser: true , useUnifiedTopology: true }, function (err, db) {
+//conocted to mongo db
+mongoose.connect("mongodb://localhost:27017/laptechDB",{ useNewUrlParser: true , useUnifiedTopology: true }, function (err, db) {
      if(err) throw err;
      else console.log("mongoDB connected..");
 });
