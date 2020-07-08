@@ -1,38 +1,7 @@
+/* background color #FFEBFB
+date collor */
+
 html,body{
-  height: 100vh;
-  width: 100vw;
 
-  background-position: 0% 9%;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-color: #f2f2f2;
-}
-
-.nav-color{
-  background-color: #f2f2f2;
-}
-
-.crypto{
-  margin-top: 10px;
-}
-
-
-
-.footer-padding {
-	padding-bottom: 60px;
-}
-
-.footer-content{
-  margin-top: 15px;
-}
-.footer{
-  position: absolute;
-	text-align: center;
-  background: #000000;
-  opacity:0.6;
-  filter:Alpha(opacity=60);
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #ebeded;
 }

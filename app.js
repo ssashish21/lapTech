@@ -56,10 +56,11 @@ app.set("view engine","ejs");
 // Routes
 app.use('/',require('./routes/index'));
 app.use('/users',require('./routes/users'));
+app.use('/products',require('./routes/products'));
 
 // var path = require("path");
 
 
-const PORT = process.env.PORT || 5555 ;
+const PORT = process.env.PORT || 3000 ;
 
 app.listen(PORT,console.log('server running on port '+ PORT));

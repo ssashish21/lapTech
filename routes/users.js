@@ -14,6 +14,8 @@ router.get('/signin',(req,res)=> res.render('signin'));
 router.get('/signup',(req,res)=> res.render('signup'));
 
 
+
+
 // Register handle
 router.post('/signup',(req,res)=>{
   const { name, email, password, password2 } = req.body;
@@ -62,9 +64,8 @@ router.post('/signup',(req,res)=>{
              bcrypt.hash(newUser.password, salt, (err, hash) => {
                if (err) throw err;
                newUser.password = hash;
-               newUser
-                 .save()
-                 .then(user => {
+               newUser.save()
+               .then(user => {
                    req.flash('success_msg','You are now registered and can log in');
                    res.redirect('/users/signin');
                  })

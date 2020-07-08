@@ -1,24 +1,30 @@
 <%- include("partials/header"); -%>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm description">
-      <h1 class="crypto">Apple mac</h1>
-      <h3 class="crypto">2008–present</h3>
-      <pre class="crypto">
-        “You have to be burning with an idea,
-         or a problem, or a wrong that you
-         want to right. If you're not passionate
-          enough from the start, you'll never
-           stick it out.”
-          ― Steve Jobs
-</pre>
-    </div>
-    <div class="col-sm">
-        <img class="image" src="http://localhost:5555/images/dp.jpg" style="width:600px;height:400px;alt="">
-    </div>
-  </div>
+<div class="container text-center">
+      <p class="btn  btn-lg">
+            <a class="btn btn-lg btn-primary" href="/products/new"> <b>+</b> New Product</a>
+          </p>
+          
 </div>
+
+<% laptops.forEach(function(laptop){%>
+      <div>
+          <h2><%= laptop.company_name%></h2>
+          <img src="<%= laptop.url%>" alt="image">
+          <p><%= laptop.product_name%></p>
+          <p><%= laptop.price%></p>
+          <p><%= laptop.generation%></p>
+          <p><%= laptop.operating_system%></p>
+          <p><%= laptop.batty_life%></p>
+          <p><%= laptop.keyboard_light%></p>
+          <p><%= laptop.ram%></p>
+          <p><%= laptop.ssd%></p>
+          <p><%= laptop.hdd%></p>
+          <p><%= laptop.tag%></p>
+      </div>
+  <%})%>
+
+
 
 
 <%- include("partials/footer"); -%>
